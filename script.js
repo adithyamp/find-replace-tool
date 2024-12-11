@@ -16,6 +16,11 @@ function findAndReplace() {
     return;
   }
 
+  if(!replaceWord){
+    resultDiv.textContent = 'Please enter replace word';
+    return;
+  }
+
   if(!text.includes(findWord)){
     resultDiv.textContent = 'Word does not exist in text.';
     return;
