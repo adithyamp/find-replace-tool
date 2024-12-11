@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find and Replace Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Find and Replace Tool</h1>
+    <textarea id="textArea" placeholder="Enter or paste your text here"></textarea>
+    <div style="display: inline;">
+        <label for="findInput" style="float: left;">Find word/phrase</label>
+    </div>
+    <div style="display: inline;">
+        <label for="replaceInput">Replace with</label>
+    </div>
+    <div class="input-group" style="margin-top: 10px;">
+      <input type="text" id="findInput" placeholder="Find word/phrase">
+      <input type="text" id="replaceInput" placeholder="Replace with">
+    </div>
+    <div class="actions" >
+      <button id="replaceBtn" class="button find-btn-color"><span>Find and Replace</span></button>
+      <button id="clearBtn" class="button"><span>Clear</span></button>
+    </div>
+    <div id="result" class="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
